@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employees List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    strong {
+      font-weight: bold;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Employees List</h1>
+  <p><strong>Name:</strong> <%= name %></p>
+  <p><strong>Surname:</strong> <%= surname %></p>
+  <p><strong>Job position:</strong> <%= position %></p>
+  <p><strong>Phone Number:</strong> <%= phone %></p>
+  <p><strong>ID Number:</strong> <%= idNumber %></p>
+  <p><strong>Email:</strong> <%= email %></p>
+  <% if (image) { %>
+    <p><strong>Image:</strong></p>
+    <img src="/<%= image.filename %>" alt="Uploaded Image">
+  <% } %>
+</body>
+</html>
